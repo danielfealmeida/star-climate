@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: ghostwhite;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.body.tatooine {
+    background-image: url("img/tatooine.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.body.hoth {
+    background-image: url("img/hoth.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.body.endor {
+    background-image: url("img/endor.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+#content-title {
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-250%, -50%);
+    width: 1em;
+    font-size: 70px;
+    filter: drop-shadow(3px 3px 5px black);
+}
+
+#information {
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12em, -3em);
+    width: 25em;
+    font-size: 30px;
+    filter: drop-shadow(3px 3px 5px black);
+}
+
+#temperature {
+    color: white;
+    position: relative;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 1em;
+    font-size: 70px;
+    filter: drop-shadow(3px 3px 5px black);
+}
+
+#thermometer {
+    width: 200px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    transform: translate(-50%);
+}
+
+@media only screen and (max-width: 800px) {
+    .body.tatooine{
+        background-size: 500%;
+        background-repeat: no-repeat;
+        background-position-x: -100vw;
+        background-position-y: -80vh;
+    }
+    .body.hoth {
+        background-size: 500%;
+        background-repeat: no-repeat;
+        background-position-x: -100vw;
+        background-position-y: -50vh;
+    }
+    
+    .body.endor {
+        background-size: 500%;
+        background-repeat: no-repeat;
+        background-position-x: -100vw;
+        background-position-y: -80vh;
+    }
+    
+    #information {
+        font-size: 20px;
+        width: 18em;
+        transform: translate(-10em, -3em);
+    }
+
+    #temperature {
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    } 
+
+    #thermometer {
+        position: absolute;
+        left: 25%;
+        top: 35%;
+    }
+}
+  
